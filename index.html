@@ -13,6 +13,7 @@
             box-sizing: border-box;
         }
         body {
+            background-color: #101214;
             color: #f1f1f1;
             font-family: 'Poppins', sans-serif;
             overflow-x: hidden;
@@ -23,6 +24,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 5% 10%;
+            height: 760px;
         }
         .welcome-container .textBox {
             display: flex;
@@ -30,14 +32,49 @@
             justify-content: center;
         }
         .menu-container {
-            background-color: #0E1012;
+            background-image: url('assets/Images/inkArt1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
        .menu-container .ratings {
-            background-color: red;
-            padding: 2% 10%;
+            background-color: #1F1F1F;
+            padding: 20px 10% 20px 10%;
+            height: 180px;
+        }
+        .menu-container .textBox {
+            margin: 5% 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fb8500;
+            font-family: 'Times New Roman', Times, serif;
         }
         .menu-container .row {
-            padding: 5% 10%;
+            padding: 2% 10%;
+        }
+        .card {
+            background-color: rgb(16, 18, 20, 75%);
+            border: 1px solid #fb8500;
+            border-radius: 0px;
+            color: #f1f1f1;
+            height: auto;
+            flex-direction: column-reverse;
+
+            .imgBox {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+            .card-body {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -74,7 +111,7 @@
             <p>Enjoy the best Japanese food in town</p>
         </div>
         <div class="imgBox">
-            <img src="Images/food1.jpg" alt="mainFood">
+            <img src="assets/Images/food1.jpg" alt="mainFood">
         </div>
     </div>
     <div class="menu-container">
@@ -82,57 +119,69 @@
             <div class="container text-center">
                 <div class="row">
                   <div class="col">
-                    Categ 1
+                    Feature
                   </div>
                   <div class="col">
-                    Categ 2
+                    Feature
                   </div>
                   <div class="col">
-                    Categ 3
+                    Feature
                   </div>
                   <div class="col">
-                    Categ 4
+                    Feature
                   </div>
                   <div class="col">
-                    Categ 5
+                    Feature
                   </div>
                 </div>
               </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="textBox">
+          <h6>注目メニュー</h6>
+          <h1>FEATURED MENU</h1>
+        </div>  
+        <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
               <div class="card">
-                <img src="Images/Food1.jpg" class="card-img-top" alt="...">
+                <div class="imgBox">
+                  <img src="assets/Images/Food1.jpg" class="card-img-top" alt="...">
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Ramen</h5>
+                  <p class="card-text">拉麺</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img src="Images/Food2.jpg" class="card-img-top" alt="...">
+                <div class="imgBox">
+                  <img src="assets/Images/Food1.jpg" class="card-img-top" alt="...">
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Sushi</h5>
+                  <p class="card-text">寿司</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img src="Images/Food3.jpg" class="card-img-top" alt="...">
+                <div class="imgBox">
+                  <img src="assets/Images/Food1.jpg" class="card-img-top" alt="...">
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">Seafood</h5>
+                  <p class="card-text">シーフード</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img src="Images/Food4.jpg" class="card-img-top" alt="...">
+                <div class="imgBox">
+                  <img src="assets/Images/Food1.jpg" class="card-img-top" alt="...">
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Liquor</h5>
+                  <p class="card-text">お酒</p>
                 </div>
               </div>
             </div>
