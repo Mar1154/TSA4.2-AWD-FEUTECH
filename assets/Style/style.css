@@ -73,6 +73,7 @@ body {
     h1 {
         font-family: 'Times New Roman', Times, serif;
         font-size: 3rem;
+        font-weight: 700;
         text-align: center;
         color: #E53A1F;
     }
